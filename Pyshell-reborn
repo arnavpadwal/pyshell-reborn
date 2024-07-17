@@ -7,7 +7,8 @@ import random
 from time import sleep
 from modules.pyshell_reborn import make_payload, make_connection
 
-# Author: Arnav Padwal
+# Author: knassar702
+# Maintainer: Arnav Padwal
 # Version: 1
 
 class PyShellReborn:
@@ -39,7 +40,9 @@ class PyShellReborn:
         print(f"""
 \t {self.TAF}[!] Beta [!] {self.END}
 \t [*] Version : 1.0
-\t [*] Coded by : Arnav Padwal\n""")
+\t [*] Author : knassar702
+\t [*] Maintainer: Arnav Padwal\n
+""")
     
     def help(self):
         self.slowprint("""
