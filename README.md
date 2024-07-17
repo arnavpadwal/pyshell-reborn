@@ -122,7 +122,7 @@ To start the listener and wait for a victim to connect:
 
 ``` 
 [👾] Pyshell-Reborn :~ run
-[+] Waiting for The Victim to connect..
+[+] Waiting for the victim...
 ```
 
 #### **Example Session**
