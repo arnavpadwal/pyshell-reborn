@@ -161,7 +161,7 @@ NOTE: Please provide detailed information to help me understand and resolve the 
 
 ### Supporting the Project
 
-If you find PyShell-Reborn useful and would like to support the project's development, consider making a donation. Your support is greatly appreciated and helps us continue improving and maintaining the tool.
+If you find PyShell-Reborn useful and would like to support the project's development, consider making a donation. Your support is greatly appreciated and helps me continue improving and maintaining the tool.
 
 <img src="./img/upi.png" alt="upi information" width=180>
 
