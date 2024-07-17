@@ -80,7 +80,7 @@ PyShell-Reborn supports various commands to configure and manage payloads and co
 
 To configure the host and port for the payload:
 
-``` shell
+```
 [👾] Pyshell-Reborn :~ set host 192.168.1.10
 Host => 192.168.1.10
 
@@ -90,14 +90,14 @@ Port => 4444
 
 To set a session name:
 
-``` shell
+``` 
 [👾] Pyshell-Reborn :~ set name mysession
 Name => mysession
 ```
 
 To view the current configuration:
 
-``` shell
+``` 
 [👾] Pyshell-Reborn :~ show options
 
 [+] Your Host : 192.168.1.10
@@ -109,7 +109,7 @@ To view the current configuration:
 
 After configuring the host, port, and name, you can create the payload:
 
-``` shell
+``` 
 [👾] Pyshell-Reborn :~ make
 [+] Building Payload [+]
 [+] Completed [+]
@@ -120,7 +120,7 @@ After configuring the host, port, and name, you can create the payload:
 
 To start the listener and wait for a victim to connect:
 
-``` shell
+``` 
 [👾] Pyshell-Reborn :~ run
 [+] Waiting for The Victim to connect..
 ```
