@@ -58,7 +58,7 @@ class PyShellReborn:
 
     def main(self):
         while True:
-            ask = input('[*] User@Pyshell-Reborn :~ ').lower()
+            ask = input('[👾] Pyshell-Reborn :~ ').lower()
             if ask == "help":
                 self.help()
             elif ask == 'banner':
