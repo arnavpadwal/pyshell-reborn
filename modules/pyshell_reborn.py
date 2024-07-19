@@ -15,15 +15,6 @@ from time import sleep
 
 class Utils:
     @staticmethod
-    def slow_print(text, speed):
-        speeds = {1: 0.05, 2: 0.0125, 3: 0.00833}
-        delay = speeds.get(speed, 0)
-        for char in text + '\n':
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            sleep(delay)
-
-    @staticmethod
     def restart():
         python = sys.executable
         os.execl(python, python, *sys.argv)

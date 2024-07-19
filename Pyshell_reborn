@@ -2,10 +2,10 @@
 
 import os
 import sys
-import subprocess
+import socket
 import random
 from time import sleep
-from modules.pyshell_reborn import make_payload, make_connection
+from modules.pyshell_reborn import make_payload, Server
 
 # Author: knassar702
 # Maintainer: Arnav Padwal
@@ -20,15 +20,9 @@ class PyShellReborn:
         self.port = " "
         self.name = " "
         self.logo()
-        
-    def slowprint(self, s, speed=0.05):
-        for c in s + '\n':
-            sys.stdout.write(c)
-            sys.stdout.flush()
-            sleep(speed)
 
     def logo(self):
-        logo = '''
+        logo = r'''
     ____        _____ __         ____      ____       __                   
    / __ \__  __/ ___// /_  ___  / / /     / __ \___  / /_  ____  _________ 
   / /_/ / / / /\__ \/ __ \/ _ \/ / /_____/ /_/ / _ \/ __ \/ __ \/ ___/ __ \
@@ -45,7 +39,7 @@ class PyShellReborn:
 """)
     
     def help(self):
-        self.slowprint("""
+        print("""
   Commands :
        set host       : Change Your Host (Ex: set host IP)
        set port       : Change Your Port (Ex: set port 4444)
@@ -86,15 +80,15 @@ class PyShellReborn:
                 print(f"Name => {self.name}")
             elif ask == "show options":
                 info = (f"\n[+] Your Host : {self.host}\n[+] Your Port : {self.port}\n[+] Session Name : {self.name}\n")
-                self.slowprint(info)
+                print(info)
             elif ask == "make":
                 if self.host != " " and self.port != " " and self.name != " ":
-                    self.slowprint("[+] Building Payload [+]")
+                    print("[+] Building Payload [+]")
                     os.chdir('payloads')
-                    make_payload(self.host, self.port, self.name)
+                    make_payload(self.host, self.port, f"{self.name}.py")
                     os.chdir('..')
                     sleep(2)
-                    self.slowprint("[+] Completed [+]\n[!] Saved in payloads File")
+                    print("[+] Completed [+]\n[!] Saved in payloads File")
                 else:
                     print(f"""
 [!] Host   : {self.host}
@@ -104,7 +98,8 @@ class PyShellReborn:
             elif ask in ['exploit', 'run', 'start']:
                 if self.host != " " and self.port != " ":
                     try:
-                        make_connection(self.host, self.port)
+                        server = Server(self.host, self.port)
+                        server.start()
                     except OverflowError:
                         print('[!] Long Port ..')
                     except KeyboardInterrupt:
