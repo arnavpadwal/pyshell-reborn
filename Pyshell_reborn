@@ -34,7 +34,7 @@ class PyShellReborn:
         print(f"""
 \t {self.TAF}[!] Beta [!] {self.END}
 \t [*] Version : 1.0
-\t [*] Author : Khaled Nassar
+\t [*] Author : Khaled Nasser
 \t [*] Maintainer: Arnav Padwal\n
 """)
     

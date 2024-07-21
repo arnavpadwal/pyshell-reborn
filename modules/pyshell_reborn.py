@@ -1,6 +1,6 @@
 """
 This project is a fork of https://github.com/knassar702/pyshell
-Author: Khaled Nassar (https://github.com/knassar702)
+Author: Khaled Nasser (https://github.com/knassar702)
 Maintainer: Arnav Padwal (https://github.com/arnavpadwal)
 License: GPL 3.0
 """
