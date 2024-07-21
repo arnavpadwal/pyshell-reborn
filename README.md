@@ -4,10 +4,10 @@
 
 ---
 
-**NOTE**: PyShell-Reborn is a fork of [pyshell](https://github.com/knassar702/pyshell) tool by **knassar702**. Since pyshell is no longer maintained, I have taken up its development and maintainance indivisually. I extend my thanks to the original author, knassar702, for their contributions.
+**NOTE**: PyShell-Reborn is a fork of [pyshell](https://github.com/knassar702/pyshell) tool by **knassar702**. Since pyshell is no longer maintained, I have taken up its development and maintainance indivisually. I extend my thanks to the original author, Khaled Nasser, for their contributions.
 
 
-**PyShell-Reborn** is a Python3 implementation of the original [pyshell](https://github.com/knassar702/pyshell) tool by **knassar702**. It is a **Remote Access Trojan (RAT)** that allows for comprehensive control over a victim's device. It allows users to create and deploy payloads to remote systems, enabling a command and control interface. 
+**PyShell-Reborn** is a refactored Python3 implementation of the original [pyshell](https://github.com/knassar702/pyshell) tool by **Khaled Nasser**. It is a **Remote Access Trojan (RAT)** that allows for comprehensive control over a victim's device. It allows users to create and deploy payloads to remote systems, enabling a command and control interface. 
 
 
 ## Features 
