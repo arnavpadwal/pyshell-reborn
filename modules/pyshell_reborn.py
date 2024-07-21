@@ -97,7 +97,7 @@ class Payload:
 
     def upload_file(self):
         self.s.sendall(b"ok")
-        file_name = f"{self.l}.pyshell-reborn"
+        file_name = f"{self.l}.pyshell_reborn"
         with open(file_name, 'wb') as file:
             while True:
                 data = self.s.recv(1024)
@@ -261,7 +261,7 @@ class Payload:
 
     def upload_file(self):
         self.s.sendall(b"ok")
-        file_name = f"{self.l}.pyshell-reborn"
+        file_name = f"{self.l}.pyshell_reborn"
         with open(file_name, 'wb') as file:
             while True:
                 data = self.s.recv(1024)
